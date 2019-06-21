@@ -1,5 +1,5 @@
 
-module = angular.module 'angularBootstrapNavTree',[]
+module = angular.module 'ngNavTree',[]
 
 module.directive 'abnTree',['$timeout',($timeout)-> 
   restrict:'E'
