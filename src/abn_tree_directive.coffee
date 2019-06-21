@@ -1,4 +1,4 @@
-module = angular.module 'angularBootstrapNavTree',[]
+module = angular.module 'ngNavTree',[]
 
 module.directive 'abnTree',['$timeout',($timeout)-> 
   restrict:'E'
@@ -467,13 +467,3 @@ module.directive 'abnTree',['$timeout',($timeout)->
               tree.select_branch(prev)
               return prev
 ]
-
-
-
-
-
-
-
-
-
-

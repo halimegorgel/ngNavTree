@@ -1,6 +1,6 @@
   
 
-deps = ['angularBootstrapNavTree']
+deps = ['ngNavTree']
 if angular.version.full.indexOf("1.2")>=0
   deps.push('ngAnimate')
 

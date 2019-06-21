@@ -1,13 +1,11 @@
-angular-bootstrap-nav-tree
+ng-nav-tree
 ==========================
 
 This is a Tree directive for Angular JS apps that use Bootstrap CSS.
 
-example: http://nickperkinslondon.github.io/angular-bootstrap-nav-tree/test/bs3_ng120_test_page.html
-
 The style is completely Bootstrap because the tree is actually just a Bootstrap "nav" list, with a few changes:  Indentation is added, expand/collapse icons are added, and Angular CSS animations are used during expand/collapse.
 
-The abn-tree now works Bootsrap 2, or Bootstrap 3, and with Angular 1.1.5 or 1.2.0
+The abn-tree now works Bootsrap 2, or Bootstrap 3, and with Angular 1.x
 
 The normal Glyphicons work well, but they appear black instead of blue.  Alternatively, you can use the Font Awesome icons, which look even better, and match the blue color of the text.
 
@@ -15,6 +13,7 @@ You can change the icons used by specifying them in html attributes.
 
 This tree is developed using CoffeeScript and Jade, but you don't need to be using either of those to use this tree -- you just have to be using Angular and Bootsrap.
 
+Forked From: https://github.com/nickperkinslondon/angular-bootstrap-nav-tree.git
 
 How to use it:
 Just include the 2 files from "dist",
@@ -22,7 +21,7 @@ Just include the 2 files from "dist",
     abn_tree_directive.js
     abn_tree.css
 
-Add `'angularBootstrapNavTree'` to your module's list of dependencies.
+Add `'ngNavTree'` to your module's list of dependencies.
 
 Then put an `<abn-tree>` directive in your HTML.
 ( see the example in "test" )
@@ -96,5 +95,3 @@ Each branch can have a "data" element which you can use to hold whatever data yo
 
 Warning: If you attach extra attributes directly to a branch (instead of to "branch.data"), they could conflict with the internal workings of the tree, which adds branch attributes at runtime, like "expanded" and "selected".
 
-Tree-Control API:
-If you pass an empty object to the tree as "tree-control", it will be populated with a set of functions for navigating and controlling the tree.  See the example page for a demo...
